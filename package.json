@@ -1,0 +1,8 @@
+{
+  "name": "nexgen-store-summit",
+  "version": "2.0.0",
+  "main": "server.js",
+  "scripts": { "start": "node --env-file-if-exists=.env server.js", "seed": "node --env-file-if-exists=.env seed.js" },
+  "engines": { "node": ">=22.13" },
+  "dependencies": { "bcryptjs": "^2.4.3", "express": "^4.19.2", "jsonwebtoken": "^9.0.2", "nodemailer": "^6.9.14" }
+}

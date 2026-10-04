@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NexGen | Smart solutions, better living</title>
+<meta name="description" content="NexGen smart lights, sensors and door locks, plus the NexGen Smart Living Summit 2026.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--dark:#0F2D20;--mid:#3D8B5E;--off:#F6F9F7;--line:#d6e4db;--red:#c0392b}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 Poppins,Inter,system-ui,sans-serif;color:var(--dark);background:var(--off)}
+a{color:inherit}h1,h2,h3{line-height:1.2;margin:0 0 .6rem}h1{font-size:clamp(1.9rem,5vw,3rem)}h2{font-size:clamp(1.4rem,3.5vw,2rem)}h3{font-size:1.05rem}
+:focus-visible{outline:3px solid var(--mid);outline-offset:2px}
+.wrap{max-width:1120px;margin:auto;padding:44px 20px}.lead{color:#4a6455;max-width:62ch}.sm{font-size:.88rem;color:#4a6455}
+nav{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:6px 20px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-size:.78rem;font-weight:600;line-height:1.25}.brand img{height:46px}
+#links{display:flex;gap:16px;list-style:none;margin:0;padding:0;align-items:center}#links a{text-decoration:none;font-weight:500;font-size:.9rem}#links a:hover{color:var(--mid)}
+.dd{position:relative}.dd ul{display:none;position:absolute;top:100%;left:0;background:#fff;border:1px solid var(--line);border-radius:8px;list-style:none;padding:6px 0;margin:0;min-width:170px;box-shadow:0 8px 20px rgba(15,45,32,.12)}
+.dd:hover ul,.dd:focus-within ul{display:block}.dd li a{display:block;padding:6px 14px}
+.badge{background:var(--mid);color:#fff;border-radius:10px;font-size:.7rem;padding:1px 7px;margin-left:3px}
+#burger{display:none;background:none;border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:1.1rem;cursor:pointer}
+.btn{display:inline-block;background:var(--mid);color:#fff;border:0;border-radius:8px;padding:10px 20px;font-family:inherit;font-weight:600;font-size:.95rem;cursor:pointer;text-decoration:none}
+.btn:hover{background:var(--dark)}.btn.alt{background:#fff;color:var(--dark);border:1px solid var(--dark)}.btn.alt:hover{background:var(--off)}.btn.sm{padding:6px 12px;font-size:.85rem;color:#fff}.btn.alt.sm{color:var(--dark)}.btn:disabled{opacity:.6;cursor:wait}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between}.row.l{justify-content:flex-start}
+.hero{background:linear-gradient(135deg,#fff,#e2efe7)}.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}.logo{width:100%;max-width:460px;justify-self:center}
+.band{background:var(--dark);color:#fff}.band .btn{background:var(--mid)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px}
+.ph{height:110px;border-radius:8px;background:linear-gradient(135deg,var(--dark),var(--mid));display:grid;place-items:center;font-size:3rem;margin-bottom:12px}
+.ico{font-size:2rem}.chips{display:flex;gap:8px;flex-wrap:wrap}.chip{border:1px solid var(--mid);color:var(--dark);background:#fff;border-radius:20px;padding:3px 14px;font-family:inherit;font-size:.85rem}
+button.chip{cursor:pointer}.chip.on{background:var(--dark);color:#fff;border-color:var(--dark)}
+.cd{font-weight:600;font-size:1.15rem;color:var(--mid)}.band .cd{color:#9fd4b4}
+form{display:grid;gap:14px;max-width:560px}label{display:grid;gap:4px;font-weight:500;font-size:.92rem}
+input,select,textarea{font:inherit;padding:10px 12px;border:1px solid #9db5a6;border-radius:8px;background:#fff;color:var(--dark);width:100%}
+.slot{display:grid;grid-template-columns:70px 1fr auto;gap:14px;padding:14px 0;border-bottom:1px solid var(--line);align-items:start}.slot time{font-weight:700;color:var(--mid)}
+.tw{overflow-x:auto}table{border-collapse:collapse;background:#fff;width:100%}td,th{border:1px solid var(--line);padding:6px 10px;text-align:left;font-size:.85rem;vertical-align:top}th{background:#e6efe8}
+.sw{width:50px;height:28px;border-radius:14px;border:0;background:#aab9b0;position:relative;cursor:pointer;margin-top:8px}.sw::after{content:"";position:absolute;top:3px;left:3px;width:22px;height:22px;border-radius:50%;background:#fff;transition:transform .2s}
+.sw[aria-checked=true]{background:#e0a030}.sw[aria-checked=true]::after{transform:translateX(22px)}
+.lamp{height:8px;border-radius:4px;background:#ccd;margin-top:10px}.lamp.on{background:#ffd966;box-shadow:0 0 14px #ffd966}
+dialog{border:0;border-radius:12px;padding:24px;max-width:440px;width:92%}dialog::backdrop{background:rgba(15,45,32,.55)}.alertbox{border-left:6px solid var(--red);padding-left:14px;margin-bottom:14px}
+details{background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px 14px;margin-bottom:8px}summary{cursor:pointer;font-weight:600}
+.map{height:200px;border-radius:12px;background:repeating-linear-gradient(45deg,#e2efe7,#e2efe7 12px,#d6e4db 12px,#d6e4db 24px);display:grid;place-items:center;color:#4a6455}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--dark);color:#fff;padding:12px 20px;border-radius:8px;z-index:50;max-width:92%}.toast.bad{background:var(--red)}
+footer{background:var(--dark);color:#cfe0d5;padding:36px 20px;text-align:center}footer img{height:90px;background:#fff;border-radius:10px;padding:6px}footer a{margin:0 8px}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}#burger{display:block}
+#links{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;align-items:flex-start;padding:12px 20px;border-bottom:1px solid var(--line)}#links.open{display:flex}
+.dd ul{display:block;position:static;border:0;box-shadow:none;padding-left:12px}.slot{grid-template-columns:56px 1fr}.slot .chip{grid-column:2;justify-self:start}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style></head><body>
+<nav id="nav"></nav><main id="app" aria-live="polite"></main>
+<footer><img src="logo.jpg" alt="NexGen - Next Generation Home"><p>Smart solutions. Better living.</p>
+<p><a href="#/products">Products</a><a href="#/features">Features</a><a href="#/summit">Summit</a><a href="#/contact">Contact</a></p><small>© 2026 NexGen. All rights reserved.</small></footer>
+<dialog id="dlg"></dialog>
+<script src="app.js"></script></body></html>
